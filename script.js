@@ -1,3 +1,5 @@
+//'https://api.github.com/users/gleydsonbrito/repos'
+
 const input = document.querySelector('input-text')
 const ul = document.querySelector('.repos')
 
@@ -19,3 +21,5 @@ function render(repos, filter){
             ul.appendChild(li)
         });
 }
+
+

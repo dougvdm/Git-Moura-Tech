@@ -12,4 +12,10 @@ function render(repos, filter){
             }
             return true 
         } )
+        filteredRepos.forEach(repo => {
+            const li = document.querySelector("li")
+            const textItem = document.createTextNode(repo.name)
+            li.appendChild(textItem)
+            ul.appendChild(li)
+        });
 }
